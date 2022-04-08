@@ -3,15 +3,14 @@
   "id": "xprebalance",
   "version": "${version}",
   "name": "XP Rebalance",
-  "description": "",
+  "description": "Addresses many issue in the vanilla XP (enchanting/repairing/etc.) system that I've grown increasingly annoyed with over the years.",
   "authors": [
     "juliand665"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/juliand665/XP-Rebalance"
   },
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/xprebalance/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -27,7 +26,7 @@
     "fabric": "*",
     "java": ">=16"
   },
-  "suggests": {
-    "another-mod": "*"
+  "recommends": {
+    "modmenu": "*"
   }
 }
