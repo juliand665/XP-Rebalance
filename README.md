@@ -1,3 +1,5 @@
+<img src="GitHub/icon.png" style='max-width: 50%'/>
+
 # XP Rebalance
 
 This mod addresses many issue in the vanilla XP (enchanting/repairing/etc.) system that I've grown increasingly annoyed with over the years. Notable changes:

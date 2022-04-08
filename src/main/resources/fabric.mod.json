@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-	    "xprebalance.XPRebalanceMod"
+      "xprebalance.XPRebalanceMod"
     ]
   },
   "mixins": [
