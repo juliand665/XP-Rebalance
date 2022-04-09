@@ -7,6 +7,12 @@
   "authors": [
     "juliand665"
   ],
+  "contributors": [
+    {
+      "name": "LlamaLad7",
+      "description": "Incredibly helpful in figuring out how to get my mixins right (a large part of the mod)."
+    }
+  ],
   "contact": {
     "sources": "https://github.com/juliand665/XP-Rebalance"
   },
