@@ -165,12 +165,11 @@ public abstract class AnvilScreenHandlerMixin extends ForgingScreenHandler {
 					int durability2 = input2.getMaxDamage() - input2.getDamage();
 					int combinedDurability = Math.min(durability1 + durability2, maxDamage);
 					int combinedDamage = maxDamage - combinedDurability;
-					if (combinedDamage < output.getDamage()) {
-						output.setDamage(combinedDamage);
-						// every bit of durability that can't be covered by one item needs to come from the other, which needs xp to come up for its missing enchants
-						repairCost += (combinedDurability - durability1) * enchantDelta2;
-						repairCost += (combinedDurability - durability2) * enchantDelta1;
-					}
+					output.setDamage(combinedDamage);
+					
+					// every bit of durability that can't be covered by one item needs to come from the other, which needs xp to come up for its missing enchants
+					repairCost += (combinedDurability - durability1) * enchantDelta2;
+					repairCost += (combinedDurability - durability2) * enchantDelta1;
 					repairCost *= enchantDeltaCostMultiplier;
 				}
 			}
