@@ -23,6 +23,8 @@ public abstract class XPUtil {
 	}
 	
 	public static void subtractXP(PlayerEntity player, int xp) {
+		updateTotalXP(player);
+		
 		if (player.totalExperience < xp) {
 			XPRebalanceMod.LOGGER.error(
 				"attempting to subtract more xp than player currently has! ({}/{})",
@@ -30,8 +32,6 @@ public abstract class XPUtil {
 			);
 			player.totalExperience = 0;
 		}
-		
-		updateTotalXP(player);
 		player.totalExperience -= xp;
 		
 		// just reset to 0 and re-progress through the levels lol, avoids floating-point inaccuracy too
