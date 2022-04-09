@@ -39,12 +39,13 @@ public abstract class EnchantmentScreenHandlerMixin extends ScreenHandler implem
 		xprebalance_enchantmentCount[slot] = cir.getReturnValue().size();
 	}
 	
+	@Dynamic("Need to reference a lambda, which has a different name in dev than in prod. MCDev was giving an error on the prod name.")
 	@Redirect(
 		at = @At(
 			value = "INVOKE",
 			target = "Lnet/minecraft/entity/player/PlayerEntity;applyEnchantmentCosts(Lnet/minecraft/item/ItemStack;I)V"
 		),
-		method = "m_ddudbryk" // lambda in onButtonClick
+		method = {"m_ddudbryk", "method_17410"} // lambda in onButtonClick
 	)
 	private void applyEnchantmentCosts(PlayerEntity player, ItemStack itemStack, int levels) {
 		var slot = levels - 1;
