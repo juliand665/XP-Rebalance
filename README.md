@@ -1,4 +1,6 @@
-<img src="GitHub/icon.png" style='max-width: 50%'/>
+<p align="center">
+    <img width=256px src="GitHub/icon.png"/>
+</p>
 
 # XP Rebalance
 
