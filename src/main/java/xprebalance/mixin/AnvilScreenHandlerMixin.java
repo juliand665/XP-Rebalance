@@ -58,7 +58,7 @@ public abstract class AnvilScreenHandlerMixin extends ForgingScreenHandler {
 	 */
 	@Overwrite
 	public boolean canTakeOutput(PlayerEntity player, boolean present) {
-		if (levelCost.get() <= 0) return false;
+		if (levelCost.get() < 0) return false;
 		if (player.getAbilities().creativeMode) return true;
 		return XPUtil.updateTotalXP(player) >= levelCost.get();
 	}
